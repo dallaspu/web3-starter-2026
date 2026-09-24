@@ -166,7 +166,7 @@ At some point tutorials stop helping and reading good code is the only thing tha
 
 - **[Uniswap/v3-core](https://github.com/Uniswap/v3-core)** ★5,024 · 2026-07-30 — the canonical AMM, and still the best-understood one.
 - **[Uniswap/v4-core](https://github.com/Uniswap/v4-core)** ★2,533 · 2026-04-24 — read it after v3, to see how a design moves when you are allowed to break it.
-- **[ethereum-optimism/optimism](https://github.com/ethereum-optimism/optimism)** ★6,471 · 2026-09-24 — the OP Stack; how an L2 is actually built.
+- **[ethereum-optimism/optimism](https://github.com/ethereum-optimism/optimism)** ★6,472 · 2026-09-24 — the OP Stack; how an L2 is actually built.
 - **[matter-labs/zksync-era](https://github.com/matter-labs/zksync-era)** ★3,235 · 2026-09-21 — how a zk rollup works, from the implementation up.
 - **[smartcontractkit/chainlink](https://github.com/smartcontractkit/chainlink)** ★8,249 · 2026-09-24 — oracles, for contracts that need data from outside the chain.
 - **[ethereum/go-ethereum](https://github.com/ethereum/go-ethereum)** ★51,364 · 2026-09-24 — the most foundational reference implementation there is. Not a first read; a reference you will come back to.
