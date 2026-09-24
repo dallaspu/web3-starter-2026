@@ -1,0 +1,40 @@
+name: refresh numbers
+
+# 为什么要有这个：这两篇文章的整个论点就是"过期的清单会害人"。
+# 而它们自己写死了几十处 ★星数 和最后推送日期 ⇒ ⛔ 一篇批判过期清单的文章
+# 自己过期，是最难看的失败形态。实测：上线后 **一天**就漂了 14 处。
+#
+# ⭐ 用 CI 自带的 GITHUB_TOKEN 就够 —— 查的全是公开仓库的公开数据，
+#    ⛔ 不需要、也不要把我们自己的 PAT 放成 secret。
+#
+# 🔴 脚本自己带全覆盖断言：文件里每一个 ★ 都必须被某条规则接住或显式豁免，
+#    否则**直接失败退出**，⛔ 不部分刷新 —— 部分刷新会留下"你以为已更新"的过期数字。
+on:
+  schedule:
+    - cron: '43 4 * * *'   # 每天 04:43 UTC（= 东八 12:43），避开整点
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: refresh star counts and push dates
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/refresh_numbers.py --apply
+
+      - name: commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "chore: refresh star counts and push dates"
+            git push
+          else
+            echo "no change"
+          fi
