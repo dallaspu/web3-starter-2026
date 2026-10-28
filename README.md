@@ -53,10 +53,10 @@ foundryup
 forge --version
 ```
 
-- **[foundry-rs/foundry](https://github.com/foundry-rs/foundry)** ★10,735 · 2026-10-27 — the 2026 default. `forge` builds and tests, `anvil` runs a local chain, `cast` makes one-off calls from the command line.
+- **[foundry-rs/foundry](https://github.com/foundry-rs/foundry)** ★10,739 · 2026-10-28 — the 2026 default. `forge` builds and tests, `anvil` runs a local chain, `cast` makes one-off calls from the command line.
 - **[foundry-rs/forge-std](https://github.com/foundry-rs/forge-std)** ★1,062 · 2026-10-26 — the test standard library. Every Foundry project has it.
-- **[remix-project-org/remix-project](https://github.com/remix-project-org/remix-project)** ★3,080 · 2026-10-27 — browser IDE, zero install. **Write your first contract today without installing anything.**
-- **[NomicFoundation/hardhat](https://github.com/NomicFoundation/hardhat)** ★8,512 · 2026-10-26 — the TypeScript path, now on **Hardhat 3**, and it ships a Foundry compatibility layer. So this is not either/or — it is Solidity tests vs TypeScript tests.
+- **[remix-project-org/remix-project](https://github.com/remix-project-org/remix-project)** ★3,083 · 2026-10-28 — browser IDE, zero install. **Write your first contract today without installing anything.**
+- **[NomicFoundation/hardhat](https://github.com/NomicFoundation/hardhat)** ★8,512 · 2026-10-28 — the TypeScript path, now on **Hardhat 3**, and it ships a Foundry compatibility layer. So this is not either/or — it is Solidity tests vs TypeScript tests.
 
 ⛔ **Do not install Truffle or Ganache.** ConsenSys sunset them in September 2023 and the repository was **archived 2024-04-22**, read-only forever. Anything you find that starts with `truffle init` or `ganache-cli` is written for a toolchain that no longer exists — `anvil` does what Ganache did.
 
@@ -135,16 +135,16 @@ It also raised the minimum compiler to `0.8.20` and moved upgradeable contracts 
 
 In this order:
 
-1. **[OpenZeppelin/ethernaut](https://github.com/OpenZeppelin/ethernaut)** ★2,342 · 2026-10-26 — a browser game, one real vulnerability class per level. **Start here because it is a game:** you will have exploited reentrancy yourself before anyone explains it to you, which is why it sticks.
-2. **[SunWeb3Sec/DeFiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs)** ★6,828 · 2026-10-27 — real historical exploits as reproducible Foundry tests. This turns knowledge into instinct; reading someone's post-mortem does not.
-3. **[crytic/slither](https://github.com/crytic/slither)** ★6,392 · 2026-10-23 — static analyser. Run it on your own contract before you deploy: free, fast, and it catches the boring class of mistake you should never ship.
+1. **[OpenZeppelin/ethernaut](https://github.com/OpenZeppelin/ethernaut)** ★2,343 · 2026-10-27 — a browser game, one real vulnerability class per level. **Start here because it is a game:** you will have exploited reentrancy yourself before anyone explains it to you, which is why it sticks.
+2. **[SunWeb3Sec/DeFiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs)** ★6,828 · 2026-10-28 — real historical exploits as reproducible Foundry tests. This turns knowledge into instinct; reading someone's post-mortem does not.
+3. **[crytic/slither](https://github.com/crytic/slither)** ★6,394 · 2026-10-23 — static analyser. Run it on your own contract before you deploy: free, fast, and it catches the boring class of mistake you should never ship.
 4. **[crytic/echidna](https://github.com/crytic/echidna)** ★3,187 · 2026-10-24 — property-based fuzzer. You state what must always hold; it tries to break you.
 5. **[Cyfrin/aderyn](https://github.com/Cyfrin/aderyn)** ★802 · 2026-10-25 — a second static analyser, written in Rust. Two analysers disagree more often than you would expect, which is the point.
 
 Further in, if this becomes your direction:
 
 - **[Cyfrin/security-and-auditing-full-course-s23](https://github.com/Cyfrin/security-and-auditing-full-course-s23)** ★1,973 · 2026-07-08 — the full auditing curriculum.
-- **[Anugrahsr/Awesome-web3-Security](https://github.com/Anugrahsr/Awesome-web3-Security)** ★1,628 · 2026-03-01 — the whole surface in one list.
+- **[Anugrahsr/Awesome-web3-Security](https://github.com/Anugrahsr/Awesome-web3-Security)** ★1,629 · 2026-03-01 — the whole surface in one list.
 - **[pcaversaccio/snekmate](https://github.com/pcaversaccio/snekmate)** ★603 · 2026-10-26 — optimised building blocks; advanced, but reading it teaches a lot about what careful code looks like.
 
 **The habit worth forming here:** run the analyser before the deploy, not after. Both of the tools above are free, and neither one is a substitute for thinking — they are for catching the mistakes that are too boring to be interesting.
@@ -154,9 +154,9 @@ Further in, if this becomes your direction:
 ## Step 5 — Your first dApp
 
 - **[scaffold-eth/scaffold-eth-2](https://github.com/scaffold-eth/scaffold-eth-2)** ★2,058 · 2026-10-13 — a complete, forkable full-stack dApp supporting Foundry and Hardhat. **Read it before you write your own.** It answers the questions a tutorial does not: where the contract address lives, how the frontend gets it, what happens when the user is on the wrong network.
-- **[wevm/wagmi](https://github.com/wevm/wagmi)** ★6,762 · 2026-10-22 — React hooks for Ethereum; frontend developers start here.
-- **[wevm/viem](https://github.com/wevm/viem)** ★3,627 · 2026-10-27 — the TypeScript interface underneath wagmi.
-- Python instead? **[ApeWorX/web3.py](https://github.com/ApeWorX/web3.py)** ★5,547 · 2026-10-24 for a library, **[eth-brownie/brownie](https://github.com/eth-brownie/brownie)** ★2,718 · 2026-10-26 for a framework.
+- **[wevm/wagmi](https://github.com/wevm/wagmi)** ★6,762 · 2026-10-28 — React hooks for Ethereum; frontend developers start here.
+- **[wevm/viem](https://github.com/wevm/viem)** ★3,627 · 2026-10-28 — the TypeScript interface underneath wagmi.
+- Python instead? **[ApeWorX/web3.py](https://github.com/ApeWorX/web3.py)** ★5,546 · 2026-10-28 for a library, **[eth-brownie/brownie](https://github.com/eth-brownie/brownie)** ★2,718 · 2026-10-26 for a framework.
 
 ---
 
@@ -166,20 +166,20 @@ At some point tutorials stop helping and reading good code is the only thing tha
 
 - **[Uniswap/v3-core](https://github.com/Uniswap/v3-core)** ★5,071 · 2026-10-23 — the canonical AMM, and still the best-understood one.
 - **[Uniswap/v4-core](https://github.com/Uniswap/v4-core)** ★2,549 · 2026-10-23 — read it after v3, to see how a design moves when you are allowed to break it.
-- **[ethereum-optimism/optimism](https://github.com/ethereum-optimism/optimism)** ★6,480 · 2026-10-27 — the OP Stack; how an L2 is actually built.
+- **[ethereum-optimism/optimism](https://github.com/ethereum-optimism/optimism)** ★6,482 · 2026-10-28 — the OP Stack; how an L2 is actually built.
 - **[matter-labs/zksync-era](https://github.com/matter-labs/zksync-era)** ★3,224 · 2026-09-24 — how a zk rollup works, from the implementation up.
-- **[smartcontractkit/chainlink](https://github.com/smartcontractkit/chainlink)** ★8,250 · 2026-10-27 — oracles, for contracts that need data from outside the chain.
-- **[ethereum/go-ethereum](https://github.com/ethereum/go-ethereum)** ★51,451 · 2026-10-27 — the most foundational reference implementation there is. Not a first read; a reference you will come back to.
+- **[smartcontractkit/chainlink](https://github.com/smartcontractkit/chainlink)** ★8,251 · 2026-10-28 — oracles, for contracts that need data from outside the chain.
+- **[ethereum/go-ethereum](https://github.com/ethereum/go-ethereum)** ★51,451 · 2026-10-28 — the most foundational reference implementation there is. Not a first read; a reference you will come back to.
 - **[ethereum/execution-specs](https://github.com/ethereum/execution-specs)** ★1,207 · 2026-10-27 — the execution layer as runnable Python. The definition, not an explanation of the definition.
-- **[ethereum/EIPs](https://github.com/ethereum/EIPs)** ★14,048 · 2026-10-26 — why a standard is shaped the way it is. Reading the EIP for something you use is usually faster than reading three articles about it.
+- **[ethereum/EIPs](https://github.com/ethereum/EIPs)** ★14,050 · 2026-10-27 — why a standard is shaped the way it is. Reading the EIP for something you use is usually faster than reading three articles about it.
 
 ---
 
 ## Chain data and reference lists
 
-- **[ethereum-lists/chains](https://github.com/ethereum-lists/chains)** ★9,833 · 2026-10-26 — chain metadata registry. **Any chain ID or RPC URL, from the source rather than from memory.** ⚠️ It lists dead networks as `active`, so it is not a liveness check. **[Chainlist](https://chainlist.org/)** is the same data, browsable, for adding a network to a wallet.
+- **[ethereum-lists/chains](https://github.com/ethereum-lists/chains)** ★9,834 · 2026-10-28 — chain metadata registry. **Any chain ID or RPC URL, from the source rather than from memory.** ⚠️ It lists dead networks as `active`, so it is not a liveness check. **[Chainlist](https://chainlist.org/)** is the same data, browsable, for adding a network to a wallet.
 - **[bkrem/awesome-solidity](https://github.com/bkrem/awesome-solidity)** ★7,065 · 2026-09-25 — surveying the whole field.
-- **[bekatom/awesome-ethereum](https://github.com/bekatom/awesome-ethereum)** ★909 · 2026-10-01 and **[ahmet/awesome-web3](https://github.com/ahmet/awesome-web3)** ★903 · 2026-10-26 — broader sweeps, less curated.
+- **[bekatom/awesome-ethereum](https://github.com/bekatom/awesome-ethereum)** ★909 · 2026-10-01 and **[ahmet/awesome-web3](https://github.com/ahmet/awesome-web3)** ★904 · 2026-10-27 — broader sweeps, less curated.
 
 ## Archived quietly — still recommended by plenty of lists
 
