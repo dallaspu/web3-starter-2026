@@ -53,10 +53,10 @@ foundryup
 forge --version
 ```
 
-- **[foundry-rs/foundry](https://github.com/foundry-rs/foundry)** ★10,751 · 2026-11-03 — the 2026 default. `forge` builds and tests, `anvil` runs a local chain, `cast` makes one-off calls from the command line.
-- **[foundry-rs/forge-std](https://github.com/foundry-rs/forge-std)** ★1,064 · 2026-11-02 — the test standard library. Every Foundry project has it.
-- **[remix-project-org/remix-project](https://github.com/remix-project-org/remix-project)** ★3,093 · 2026-11-03 — browser IDE, zero install. **Write your first contract today without installing anything.**
-- **[NomicFoundation/hardhat](https://github.com/NomicFoundation/hardhat)** ★8,521 · 2026-11-03 — the TypeScript path, now on **Hardhat 3**, and it ships a Foundry compatibility layer. So this is not either/or — it is Solidity tests vs TypeScript tests.
+- **[foundry-rs/foundry](https://github.com/foundry-rs/foundry)** ★10,751 · 2026-11-04 — the 2026 default. `forge` builds and tests, `anvil` runs a local chain, `cast` makes one-off calls from the command line.
+- **[foundry-rs/forge-std](https://github.com/foundry-rs/forge-std)** ★1,063 · 2026-11-03 — the test standard library. Every Foundry project has it.
+- **[remix-project-org/remix-project](https://github.com/remix-project-org/remix-project)** ★3,095 · 2026-11-04 — browser IDE, zero install. **Write your first contract today without installing anything.**
+- **[NomicFoundation/hardhat](https://github.com/NomicFoundation/hardhat)** ★8,521 · 2026-11-04 — the TypeScript path, now on **Hardhat 3**, and it ships a Foundry compatibility layer. So this is not either/or — it is Solidity tests vs TypeScript tests.
 
 ⛔ **Do not install Truffle or Ganache.** ConsenSys sunset them in September 2023 and the repository was **archived 2024-04-22**, read-only forever. Anything you find that starts with `truffle init` or `ganache-cli` is written for a toolchain that no longer exists — `anvil` does what Ganache did.
 
@@ -68,10 +68,10 @@ forge --version
 
 **Read the language before the frameworks.** Almost every "it doesn't work" question in your first month is a language question wearing a framework costume.
 
-- **[AmazingAng/WTF-Solidity](https://github.com/AmazingAng/WTF-Solidity)** ★14,065 · 2026-10-11 — **Chinese; start here if you read Chinese.** The best-maintained Chinese primer, and it is *current*: its first example is already on `pragma solidity ^0.8.34`.
+- **[AmazingAng/WTF-Solidity](https://github.com/AmazingAng/WTF-Solidity)** ★14,064 · 2026-10-11 — **Chinese; start here if you read Chinese.** The best-maintained Chinese primer, and it is *current*: its first example is already on `pragma solidity ^0.8.34`.
 - **[Solidity docs](https://docs.soliditylang.org/en/latest/)** — the official reference. ⚠️ Skim **[0.8.0 breaking changes](https://docs.soliditylang.org/en/latest/080-breaking-changes.html)** first; twenty minutes, saves a confusing hour.
-- **[ethereumbook/ethereumbook](https://github.com/ethereumbook/ethereumbook)** ★21,540 · 2026-10-12 — *Mastering Ethereum*, 2nd ed. manuscript, if you want a book rather than a tutorial.
-- **[Cyfrin/foundry-full-course-cu](https://github.com/Cyfrin/foundry-full-course-cu)** ★5,877 · 2026-07-08 — a full Foundry course with code, for learning alongside video.
+- **[ethereumbook/ethereumbook](https://github.com/ethereumbook/ethereumbook)** ★21,543 · 2026-10-12 — *Mastering Ethereum*, 2nd ed. manuscript, if you want a book rather than a tutorial.
+- **[Cyfrin/foundry-full-course-cu](https://github.com/Cyfrin/foundry-full-course-cu)** ★5,880 · 2026-07-08 — a full Foundry course with code, for learning alongside video.
 - **[Cyfrin/Updraft](https://github.com/Cyfrin/Updraft)** ★132 · 2026-07-06 — a free structured curriculum, if you would rather follow a syllabus than assemble one.
 
 ⚠️ Old guides say `^0.8.0` or `^0.8.17`; current is **v0.8.37**, but `^0.8.0` still compiles — that part of your tutorial is fine. The version that actually breaks builds is the **library** version, not the compiler version. That is the next section.
@@ -136,10 +136,10 @@ It also raised the minimum compiler to `0.8.20` and moved upgradeable contracts 
 In this order:
 
 1. **[OpenZeppelin/ethernaut](https://github.com/OpenZeppelin/ethernaut)** ★2,344 · 2026-11-02 — a browser game, one real vulnerability class per level. **Start here because it is a game:** you will have exploited reentrancy yourself before anyone explains it to you, which is why it sticks.
-2. **[SunWeb3Sec/DeFiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs)** ★6,834 · 2026-10-30 — real historical exploits as reproducible Foundry tests. This turns knowledge into instinct; reading someone's post-mortem does not.
-3. **[crytic/slither](https://github.com/crytic/slither)** ★6,400 · 2026-10-29 — static analyser. Run it on your own contract before you deploy: free, fast, and it catches the boring class of mistake you should never ship.
+2. **[SunWeb3Sec/DeFiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs)** ★6,836 · 2026-10-30 — real historical exploits as reproducible Foundry tests. This turns knowledge into instinct; reading someone's post-mortem does not.
+3. **[crytic/slither](https://github.com/crytic/slither)** ★6,401 · 2026-10-29 — static analyser. Run it on your own contract before you deploy: free, fast, and it catches the boring class of mistake you should never ship.
 4. **[crytic/echidna](https://github.com/crytic/echidna)** ★3,189 · 2026-11-02 — property-based fuzzer. You state what must always hold; it tries to break you.
-5. **[Cyfrin/aderyn](https://github.com/Cyfrin/aderyn)** ★803 · 2026-11-01 — a second static analyser, written in Rust. Two analysers disagree more often than you would expect, which is the point.
+5. **[Cyfrin/aderyn](https://github.com/Cyfrin/aderyn)** ★804 · 2026-11-01 — a second static analyser, written in Rust. Two analysers disagree more often than you would expect, which is the point.
 
 Further in, if this becomes your direction:
 
@@ -154,8 +154,8 @@ Further in, if this becomes your direction:
 ## Step 5 — Your first dApp
 
 - **[scaffold-eth/scaffold-eth-2](https://github.com/scaffold-eth/scaffold-eth-2)** ★2,064 · 2026-10-13 — a complete, forkable full-stack dApp supporting Foundry and Hardhat. **Read it before you write your own.** It answers the questions a tutorial does not: where the contract address lives, how the frontend gets it, what happens when the user is on the wrong network.
-- **[wevm/wagmi](https://github.com/wevm/wagmi)** ★6,770 · 2026-11-03 — React hooks for Ethereum; frontend developers start here.
-- **[wevm/viem](https://github.com/wevm/viem)** ★3,631 · 2026-11-03 — the TypeScript interface underneath wagmi.
+- **[wevm/wagmi](https://github.com/wevm/wagmi)** ★6,769 · 2026-11-03 — React hooks for Ethereum; frontend developers start here.
+- **[wevm/viem](https://github.com/wevm/viem)** ★3,632 · 2026-11-04 — the TypeScript interface underneath wagmi.
 - Python instead? **[ApeWorX/web3.py](https://github.com/ApeWorX/web3.py)** ★5,549 · 2026-10-30 for a library, **[eth-brownie/brownie](https://github.com/eth-brownie/brownie)** ★2,718 · 2026-10-26 for a framework.
 
 ---
@@ -164,14 +164,14 @@ Further in, if this becomes your direction:
 
 At some point tutorials stop helping and reading good code is the only thing that moves you. These are large enough to be real and small enough to finish.
 
-- **[Uniswap/v3-core](https://github.com/Uniswap/v3-core)** ★5,067 · 2026-10-23 — the canonical AMM, and still the best-understood one.
+- **[Uniswap/v3-core](https://github.com/Uniswap/v3-core)** ★5,068 · 2026-10-23 — the canonical AMM, and still the best-understood one.
 - **[Uniswap/v4-core](https://github.com/Uniswap/v4-core)** ★2,557 · 2026-10-23 — read it after v3, to see how a design moves when you are allowed to break it.
-- **[ethereum-optimism/optimism](https://github.com/ethereum-optimism/optimism)** ★6,489 · 2026-11-03 — the OP Stack; how an L2 is actually built.
+- **[ethereum-optimism/optimism](https://github.com/ethereum-optimism/optimism)** ★6,491 · 2026-11-04 — the OP Stack; how an L2 is actually built.
 - **[matter-labs/zksync-era](https://github.com/matter-labs/zksync-era)** ★3,222 · 2026-11-01 — how a zk rollup works, from the implementation up.
-- **[smartcontractkit/chainlink](https://github.com/smartcontractkit/chainlink)** ★8,253 · 2026-11-03 — oracles, for contracts that need data from outside the chain.
-- **[ethereum/go-ethereum](https://github.com/ethereum/go-ethereum)** ★51,459 · 2026-11-03 — the most foundational reference implementation there is. Not a first read; a reference you will come back to.
+- **[smartcontractkit/chainlink](https://github.com/smartcontractkit/chainlink)** ★8,253 · 2026-11-04 — oracles, for contracts that need data from outside the chain.
+- **[ethereum/go-ethereum](https://github.com/ethereum/go-ethereum)** ★51,457 · 2026-11-03 — the most foundational reference implementation there is. Not a first read; a reference you will come back to.
 - **[ethereum/execution-specs](https://github.com/ethereum/execution-specs)** ★1,208 · 2026-11-03 — the execution layer as runnable Python. The definition, not an explanation of the definition.
-- **[ethereum/EIPs](https://github.com/ethereum/EIPs)** ★14,060 · 2026-11-02 — why a standard is shaped the way it is. Reading the EIP for something you use is usually faster than reading three articles about it.
+- **[ethereum/EIPs](https://github.com/ethereum/EIPs)** ★14,061 · 2026-11-03 — why a standard is shaped the way it is. Reading the EIP for something you use is usually faster than reading three articles about it.
 
 ---
 
